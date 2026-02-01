@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "G++: Build and Run Active File",
+      "command": "g++ -g \"${file}\" -o \"${fileDirname}/output\" && \"${fileDirname}/output\"",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compiles the current file to 'output' and executes it immediately."
+    }
+  ]
+}
