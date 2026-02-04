@@ -9,19 +9,19 @@ class Book{
 };
 
 int main(){
-    Book communist_manefesto;
-    Book mein_kamf;
+    Book book1;
+    Book book2;
 
-    communist_manefesto.title = "The communist manefesto";
-    communist_manefesto.author = "Stalin";
-    communist_manefesto.year = 1847;
+    book1.title = "Harry Potter and the Philosopher's Stone";
+    book1.author = "J.K. Rowling";
+    book1.year = 1997;
 
-    mein_kamf.title = "Mein Kampf";
-    mein_kamf.author = "Adolf";
-    mein_kamf.year = 1890;
+    book2.title = "The Great Gatsby";
+    book2.author = "F. Scott Fitzgerald";
+    book2.year = 1925;
 
-    cout << communist_manefesto.title << ", " << communist_manefesto.author << ", " << communist_manefesto.year << endl;
-    cout << mein_kamf.title << ", " << mein_kamf.author << ", " << mein_kamf.year << endl;
+    cout << book1.title << ", " << book1.author << ", " << book1.year << endl;
+    cout << book2.title << ", " << book2.author << ", " << book2.year << endl;
 
     return 0;
 }
